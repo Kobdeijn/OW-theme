@@ -323,3 +323,19 @@ tr {
   }
 }
 
+// --- Categorieën altijd in grid-patroon ---
+.category-list tbody {
+  display: grid;
+  grid-template-columns: repeat(4, 180px); // altijd 4 kolommen, pas aan naar wens
+  grid-gap: 1.5em;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-list tbody tr {
+  width: 180px !important;
+  min-height: 180px;
+  height: 180px !important;
+  margin: 0;
+  display: block;
+}
